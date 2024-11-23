@@ -56,7 +56,7 @@ export class DialogComponent {
             },
             error: () => {
               Swal.fire({
-                title: 'Deleted!',
+                title: 'Error!',
                 text: 'Error while adding the task!',
                 icon: 'success',
                 confirmButtonText: 'OK'
@@ -85,7 +85,7 @@ export class DialogComponent {
         },
         error: () => {
           Swal.fire({
-            title: 'Deleted!',
+            title: 'Error!',
             text: 'Error while updating the task!',
             icon: 'success',
             confirmButtonText: 'OK'

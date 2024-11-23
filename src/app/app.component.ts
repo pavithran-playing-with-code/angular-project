@@ -49,8 +49,9 @@ export class AppComponent implements OnInit {
           this.dataSource.sort = this.sort;
         },
         error: (err) => {
+          debugger
           Swal.fire({
-            title: 'Deleted!',
+            title: 'Error!',
             text: 'Error occured while Fetching the record!',
             icon: 'success',
             confirmButtonText: 'OK'
@@ -71,6 +72,7 @@ export class AppComponent implements OnInit {
   }
 
   deleteTask(id: any) {
+    debugger
     Swal.fire({
       title: 'Are you sure?',
       text: 'This task will be permanently deleted.',
@@ -84,7 +86,7 @@ export class AppComponent implements OnInit {
           .subscribe({
             next: (res) => {
               Swal.fire({
-                title: 'Deleted!',
+                title: 'Error!',
                 text: 'Task has been successfully deleted.',
                 icon: 'success',
                 confirmButtonText: 'OK'
